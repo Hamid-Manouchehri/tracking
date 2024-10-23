@@ -23,7 +23,7 @@ def find_marker(frame):
     hsv = cv2.cvtColor(diff.astype(np.uint8), cv2.COLOR_BGR2HSV)
     
     # yellow range in HSV color space
-    yellowMin = (0, 0, 32)
+    yellowMin = (10, 10, 32)
     yellowMax = (100, 255, 255)
     
     # Sets pixels to white if in yellow range, else will be set to black
